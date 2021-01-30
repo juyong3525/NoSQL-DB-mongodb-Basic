@@ -5,9 +5,5 @@ knowledge = conn.knowledge
 
 knowledge_it = knowledge.it
 
-knowledge_it.insert_one(
-    {
-        "author": "Pong",
-        "age": 25
-    }
-)
+# Collection에 있는 Documents 수
+print(knowledge_it.estimated_document_count())
