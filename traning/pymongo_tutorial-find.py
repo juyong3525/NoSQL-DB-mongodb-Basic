@@ -21,4 +21,4 @@ knowledge_it = knowledge.it    # collection
 
 # # sort 함수와 함께 쓰기
 # for post in knowledge_it.find().sort("age"):
-#     print(post)
+#    print(post)
