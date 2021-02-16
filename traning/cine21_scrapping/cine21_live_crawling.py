@@ -28,7 +28,8 @@ def get_actor_details(link):
                 actor_item_field = actor_item.select_one('span.tit').get_text()
                 actor_item_value = re.sub(
                     '<span.*?>.*?</span>', '', str(actor_item))    # https://regexr.com/
-                actor_item_value = re.sub('<.*?>', '', actor_item_value)
+                actor_item_value = re.sub(
+                    '<.*?>', '', actor_item_value)    # 정규 표현식 3분 참조
                 actor_info_dict[actor_item_field] = actor_item_value
             return actor_info_dict
     except:
